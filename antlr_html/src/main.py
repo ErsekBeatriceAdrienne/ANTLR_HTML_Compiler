@@ -3,10 +3,10 @@ import sys
 import os
 
 # Grammars elérési útvonal beállítása
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../grammars')))
-from HTMLLexer import HTMLLexer
-from HTMLParser import HTMLParser
-from HTMLParserListener import HTMLParserListener
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from grammars.HTMLLexer import HTMLLexer
+from grammars.HTMLParser import HTMLParser
+from grammars.HTMLParserListener import HTMLParserListener
 
 
 class HTMLContentListener(HTMLParserListener):
@@ -67,5 +67,5 @@ def main():
 
 
 
-if __name__ == "__main__":
+if __name__ == "main":
     main()
